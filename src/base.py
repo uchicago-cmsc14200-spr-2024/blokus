@@ -187,7 +187,7 @@ class BlokusBase(ABC):
         played a piece with this shape.
 
         Raises ValueError if the anchor of the piece
-        is None or not a valid position on the board.
+        is None.
         """
         raise NotImplementedError
 
@@ -204,7 +204,7 @@ class BlokusBase(ABC):
         played a piece with this shape.
 
         Raises ValueError if the anchor of the piece
-        is None or not a valid position on the board.
+        is None.
         """
         raise NotImplementedError
 
@@ -225,6 +225,9 @@ class BlokusBase(ABC):
 
         Raises ValueError if the player has already
         played a piece with this shape.
+
+        Raises ValueError if the anchor of the piece
+        is None.
         """
 
     @abstractmethod
@@ -245,6 +248,9 @@ class BlokusBase(ABC):
 
         Raises ValueError if the player has already
         played a piece with this shape.
+
+        Raises ValueError if the anchor of the piece
+        is None.
         """
         raise NotImplementedError
 
